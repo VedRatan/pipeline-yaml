@@ -1,41 +1,21 @@
 apiVersion: apps/v1
-
 kind: Deployment
-
 metadata:
-
   name: pipeline-deployment
-
   labels:
-
     app: pipeline
-
 spec:
-
   replicas: 1
-
   selector:
-
     matchLabels:
-
       app: pipeline
-
   template:
-
     metadata:
-
       labels:
-
         app: pipeline
-
     spec:
-
       containers:
-
       - name: pipeline
-
-        image: lostlegend2702/pipeline:9.0
-
+        image: lostlegend2702/pipeline:3.0
         ports:
-
         - containerPort: 8000
