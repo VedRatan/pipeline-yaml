@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: pipeline
-        image: lostlegend2702/pipeline:3.0
+        image: lostlegend2702/pipeline:4.0
         ports:
         - containerPort: 8000
 ---
